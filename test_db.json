@@ -1,0 +1,172 @@
+{
+  "questions": [
+    {
+      "atributo1": "Ativo(a)",
+      "atributo2": "Eloquente",
+      "atributo3": "Modesto(a)",
+      "atributo4": "Observador(a)"
+    },
+    {
+      "atributo1": "Sem tato",
+      "atributo2": "Tagarela",
+      "atributo3": "Dependente",
+      "atributo4": "Inibido(a)"
+   },
+   {
+      "atributo1": "Obstinado(a)",
+      "atributo2": "Espontâneo(a)",
+      "atributo3": "Gosta de rotina",
+      "atributo4": "Insatisfeito(a)"
+    },
+   {
+      "atributo1": "Intolerante",
+      "atributo2": "Superficial",
+      "atributo3": "Lento(a)",
+      "atributo4": "Busca defeitos"
+   },
+   {
+      "atributo1": "Pioneiro(a)",
+      "atributo2": "Flexível",
+      "atributo3": "Perseverante",
+      "atributo4": "Intelectual"
+   },
+   {
+      "atributo1": "Impaciente",
+      "atributo2": "Arbitrário(a)",
+      "atributo3": "Pacífico(a)",
+      "atributo4": "Desconfiado(a)"
+    },
+    {
+      "atributo1": "Impetuoso(a)",
+      "atributo2": "Teimoso(a)",
+      "atributo3": "Recatado(a)",
+      "atributo4": "Conservador(a)"
+    },
+    {
+      "atributo1": "Dominante",
+      "atributo2": "Criativo(a)",
+      "atributo3": "Prestativo(a)",
+      "atributo4": "Organizado(a)"
+   },
+   {
+      "atributo1": "Desbravador(a)",
+      "atributo2": "Entusiasmado(a)",
+      "atributo3": "Ponderado(a)",
+      "atributo4": "Pesa prós e contras"
+   },
+   {
+      "atributo1": "Independente",
+      "atributo2": "Liberdade",
+      "atributo3": "Persistente",
+      "atributo4": "Crítico(a)"
+    },
+    {
+      "atributo1": "Objetivo(a)",
+      "atributo2": "Extrovertido(a)",
+      "atributo3": "Discreto(a)",
+      "atributo4": "Seletivo(a)"
+    },
+    {
+      "atributo1": "Determinado(a)",
+      "atributo2": "Multitarefas",
+      "atributo3": "Desprestensioso(a)",
+      "atributo4": "Observador(a)"
+    },
+    {
+      "atributo1": "Apressado(a)",
+      "atributo2": "Workaholic",
+      "atributo3": "Pacato(a)",
+      "atributo4": "Dogmático(a)"
+    },
+    {
+      "atributo1": "Disposto a assumir riscos calculados",
+      "atributo2": "Convincente",
+      "atributo3": "Versátil",
+      "atributo4": "\"Você mesmo(a)\""
+    },
+    {
+      "atributo1": "Seguro(a) de si",
+      "atributo2": "Animado(a)",
+      "atributo3": "Estável",
+      "atributo4": "Evasivo(a)"
+    },
+    {
+      "atributo1": "Rápido(a)",
+      "atributo2": "Encantador(a)",
+      "atributo3": "Amigável",
+      "atributo4": "Maduro(a)"
+    },
+    {
+      "atributo1": "Competitivo(a)",
+      "atributo2": "Equilibrado(a)",
+      "atributo3": "Prudente",
+      "atributo4": "Sensível"
+    },
+    {
+      "atributo1": "Auto-confiante",
+      "atributo2": "Generoso(a)",
+      "atributo3": "Inexpressivo(a)",
+      "atributo4": "Analítico(a)"
+    },
+    {
+      "atributo1": "Curioso(a)",
+      "atributo2": "Sociável",
+      "atributo3": "Tranquilo(a)",
+      "atributo4": "Altos padrões"
+    },
+    {
+      "atributo1": "Decisivo(a)",
+      "atributo2": "Agradável",
+      "atributo3": "Ocioso(a)",
+      "atributo4": "Contido(a)"
+    },
+    {
+      "atributo1": "Aventureiro(a)",
+      "atributo2": "Influente",
+      "atributo3": "Complacente",
+      "atributo4": "Cuidadoso(a)"
+    },
+    {
+      "atributo1": "Disposto(a) correr riscos",
+      "atributo2": "Confiante",
+      "atributo3": "Possessivo(a)",
+      "atributo4": "Cordial"
+    },
+    {
+      "atributo1": "Energico(a)",
+      "atributo2": "Oferecido(a)",
+      "atributo3": "Calmo(a)",
+      "atributo4": "Preciso(a)"
+    },
+    {
+      "atributo1": "Exigente",
+      "atributo2": "Emocional",
+      "atributo3": "Pessoa-de-equipe",
+      "atributo4": "Sistemático(a)"
+    },
+    {
+      "atributo1": "Dominador(a)",
+      "atributo2": "Impulsivo(a)",
+      "atributo3": "Previsível",
+      "atributo4": "Diplomático(a)"
+    },
+    {
+      "atributo1": "Ousado(a)",
+      "atributo2": "Persuasivo(a)",
+      "atributo3": "Leal",
+      "atributo4": "Descobridor(a) dos fatos"
+    },
+    {
+      "atributo1": "Direto(a)",
+      "atributo2": "Simpático(a)",
+      "atributo3": "Paciente",
+      "atributo4": "Preciso(a)"
+    },
+    {
+      "atributo1": "Egocêntrico(a)",
+      "atributo2": "Entusiasta",
+      "atributo3": "Passivo(a)",
+      "atributo4": "Perfeccionista"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+.footer-container{
+  width: 100%;
+  height: 10vh;
+  color: #012853;
+  background-color: #29abc5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p{
+    a{
+      text-decoration: none;
+      color: #012853;
+      font-size: 1.2em;
+      font-weight: 600;
+    }
+  }
+}
