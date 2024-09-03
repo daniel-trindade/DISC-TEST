@@ -10,5 +10,7 @@ import { ButtonComponent } from "../../components/button/button.component";
   styleUrl: './home-page.component.scss'
 })
 export class HomePageComponent {
-
+  redirect(){
+    window.location.href = "/inicio";
+  }
 }

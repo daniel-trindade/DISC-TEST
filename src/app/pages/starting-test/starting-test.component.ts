@@ -10,4 +10,7 @@ import { ButtonComponent } from "../../components/button/button.component";
 })
 export class StartingTestComponent {
 
+  redirect(){
+    window.location.href = "/teste";
+  }
 }
