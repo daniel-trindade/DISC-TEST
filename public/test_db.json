@@ -50,9 +50,9 @@
     },
     "question_9": {
       "atributo1": "Desbravador(a)",
-      "atributo2": "Entusiasmado(a)",
+      "atributo2": "Empolgado(a)",
       "atributo3": "Ponderado(a)",
-      "atributo4": "Pesa prós e contras"
+      "atributo4": "Calculista"
     },
     "question_10": {
       "atributo1": "Independente",
@@ -69,7 +69,7 @@
     "question_12": {
       "atributo1": "Determinado(a)",
       "atributo2": "Multitarefas",
-      "atributo3": "Desprestensioso(a)",
+      "atributo3": "Humilde",
       "atributo4": "Observador(a)"
     },
     "question_13": {
@@ -79,13 +79,13 @@
       "atributo4": "Dogmático(a)"
     },
     "question_14": {
-      "atributo1": "Disposto a assumir riscos calculados",
+      "atributo1": "Estratégico(a)",
       "atributo2": "Convincente",
       "atributo3": "Versátil",
-      "atributo4": "\"Você mesmo(a)\""
+      "atributo4": "Ama a si"
     },
     "question_15": {
-      "atributo1": "Seguro(a) de si",
+      "atributo1": "Resolvido",
       "atributo2": "Animado(a)",
       "atributo3": "Estável",
       "atributo4": "Evasivo(a)"
@@ -103,7 +103,7 @@
       "atributo4": "Sensível"
     },
     "question_18": {
-      "atributo1": "Auto-confiante",
+      "atributo1": "Autoconfiante",
       "atributo2": "Generoso(a)",
       "atributo3": "Inexpressivo(a)",
       "atributo4": "Analítico(a)"
@@ -141,7 +141,7 @@
     "question_24": {
       "atributo1": "Exigente",
       "atributo2": "Emocional",
-      "atributo3": "Pessoa-de-equipe",
+      "atributo3": "Pessoa de equipe",
       "atributo4": "Sistemático(a)"
     },
     "question_25": {

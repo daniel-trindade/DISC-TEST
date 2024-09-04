@@ -1,3 +1,15 @@
-<button [ngStyle]="{'height': height, 'width': width}" class="btn" (click)="handleClick()">
-  {{label}}
+<button
+  [ngClass]="{
+    'btn-selected': selected,
+    'btn-unselected': !selected
+  }"
+  [ngStyle]="{ 
+    height: height, 
+    width: width, 
+    'font-size': font,
+  }"
+  class="btn"
+  (click)="handleClick()"
+>
+  {{ label }}
 </button>

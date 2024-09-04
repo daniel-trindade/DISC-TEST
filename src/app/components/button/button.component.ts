@@ -12,6 +12,8 @@ export class ButtonComponent {
   @Input() height: string = '40px'; // valor padrão
   @Input() width: string = '100px'; // valor padrão
   @Input() label: string = 'Button'; // label para o botão
+  @Input() font: string = '20pt';
+  @Input() selected: boolean = false
   @Output() clicked: EventEmitter<any> = new EventEmitter()
 
   handleClick(){

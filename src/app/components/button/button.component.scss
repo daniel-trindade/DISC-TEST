@@ -4,9 +4,19 @@
   border-radius: 30px;
   font-size: 20pt;
   font-weight: 600;
-  background-color: #F7F39C;
-  color: #012853;
+  // background-color: #F7F39C;
+  // color: #012853;
   border: none;
   box-shadow: 4px 4px 5px #012853;
   cursor: pointer;
+}
+
+.btn-selected {
+  background-color: #012853;
+  color: #F7F39C;
+}
+
+.btn-unselected {
+  background-color: #F7F39C;
+  color: #012853;
 }
