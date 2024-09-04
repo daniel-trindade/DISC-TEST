@@ -37,4 +37,8 @@ export class TestComponent {
       console.log(data.questions.question_1.atributo1)
     });
   }
+
+  handleOption(option: any){
+    console.log(option)
+  }
 }

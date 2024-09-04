@@ -5,10 +5,30 @@
     <span>melhor</span> lhe descreve!
   </h1>
   <div class="options">
-    <app-button width="160px" height="80px" label="{{ option1 }}"></app-button>
-    <app-button width="160px" height="80px" label="{{ option2 }}"></app-button>
-    <app-button width="160px" height="80px" label="{{ option3 }}"></app-button>
-    <app-button width="160px" height="80px" label="{{ option4 }}"></app-button>
+    <app-button
+      width="160px"
+      height="80px"
+      label="{{ option1 }}"
+      (clicked)="handleOption(option1)"
+    ></app-button>
+    <app-button
+      width="160px"
+      height="80px"
+      label="{{ option2 }}"
+      (clicked)="handleOption(option2)"
+    ></app-button>
+    <app-button
+      width="160px"
+      height="80px"
+      label="{{ option3 }}"
+      (clicked)="handleOption(option3)"
+    ></app-button>
+    <app-button
+      width="160px"
+      height="80px"
+      label="{{ option4 }}"
+      (clicked)="handleOption(option4)"
+    ></app-button>
   </div>
   <div class="progress">
     <app-button width="130px" height="60px" label="Proximo"></app-button>
