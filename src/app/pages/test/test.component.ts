@@ -35,7 +35,9 @@ export class TestComponent {
   selection3: boolean = false;
   selection4: boolean = false;
   progressBar: number = 0;
-  holdResult: string[] = []
+  holdOption: string = "";
+  holdResult: string[] = [];
+
 
   ngOnInit(): void {
     this.dataService.getData().subscribe((data) => {
@@ -50,22 +52,22 @@ export class TestComponent {
     if(option=='A'){
       this.setFalseAll()
       this.selection1=!this.selection1
-      console.log(option)
+      this.holdOption = "A"
     }
     if(option=='B'){
       this.setFalseAll()
       this.selection2=!this.selection2
-      console.log(option)
+      this.holdOption = "B"
     }
     if(option=='C'){
       this.setFalseAll()
       this.selection3=!this.selection3
-      console.log(option)
+      this.holdOption = "C"
     }
     if(option=='D'){
       this.setFalseAll()
       this.selection4=!this.selection4
-      console.log(option)
+      this.holdOption = "D"
     }
   }
 
@@ -75,6 +77,9 @@ export class TestComponent {
     this.questionBlock++;
     this.setOptions();
     this.setProgressBar();
+    this.holdResult.push(this.holdOption)
+    console.log(this.holdResult)
+    this.setFalseAll
   }
 
    //FUNÇÃO PARA TROCAR OS ATRIBUTOS 
