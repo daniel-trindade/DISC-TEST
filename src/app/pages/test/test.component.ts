@@ -110,6 +110,31 @@ export class TestComponent {
   }
 
   showResult(){
-    
+    if(this.holdOption){
+      let a: number = 0
+      let b: number = 0
+      let c: number = 0
+      let d: number = 0
+  
+      this.holdResult.push(this.holdOption);
+  
+      for(let i=0; i< this.holdResult.length; i++){
+        if(this.holdResult[i]=='A'){
+          a++
+        }
+        if(this.holdResult[i]=='B'){
+          b++
+        }
+        if(this.holdResult[i]=='C'){
+          c++
+        }
+        if(this.holdResult[i]=='D'){
+          d++
+        }
+      }
+      console.log(a, ' -- ', b, ' -- ', c, ' -- ', d)
+    }else{
+      console.log('escolha uma opção')
+    }
   }
 }

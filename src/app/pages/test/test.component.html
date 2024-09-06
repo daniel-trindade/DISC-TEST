@@ -52,12 +52,12 @@
     height="60px"
     font="16pt"
     label="Concluir"
-    (clicked)="nextBlock()"
+    (clicked)="showResult()"
     *ngIf="questionBlock==28"
   ></app-button>
     <p>{{ questionBlock }}/28</p>
     <app-progress-bar [progress]="progressBar"></app-progress-bar>
     <p>Progresso</p>
-    <a href="/">Sair</a>
+    <a href="/" *ngIf="questionBlock<28">Sair</a>
   </div>
 </div>
