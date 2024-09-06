@@ -70,17 +70,16 @@ export class TestComponent {
 
   //FUNÇÃO ATRIBUIDA AO BOTÃO "PROXIMO": FAZ AS CHAMADAS NECESSÁRIAS PARA ATUALIZAR A TELA A CADA PASSO
   nextBlock() {
-    if(this.holdOption){
+    if (this.holdOption) {
       this.questionBlock++;
       this.setOptions();
       this.setProgressBar();
       this.holdResult.push(this.holdOption);
       console.log(this.holdResult);
       this.setFalseAll();
-    }else{
-      console.log("não entrou")
+    } else {
+      console.log("não entrou");
     }
-    
   }
 
   //FUNÇÃO PARA TROCAR OS ATRIBUTOS
@@ -109,32 +108,34 @@ export class TestComponent {
     this.selection4 = false;
   }
 
-  showResult(){
-    if(this.holdOption){
-      let a: number = 0
-      let b: number = 0
-      let c: number = 0
-      let d: number = 0
-  
+  showResult() {
+    if (this.holdOption) {
+      let a: number = 0;
+      let b: number = 0;
+      let c: number = 0;
+      let d: number = 0;
+
       this.holdResult.push(this.holdOption);
-  
-      for(let i=0; i< this.holdResult.length; i++){
-        if(this.holdResult[i]=='A'){
-          a++
+
+      for (let i = 0; i < this.holdResult.length; i++) {
+        if (this.holdResult[i] == "A") {
+          a++;
         }
-        if(this.holdResult[i]=='B'){
-          b++
+        if (this.holdResult[i] == "B") {
+          b++;
         }
-        if(this.holdResult[i]=='C'){
-          c++
+        if (this.holdResult[i] == "C") {
+          c++;
         }
-        if(this.holdResult[i]=='D'){
-          d++
+        if (this.holdResult[i] == "D") {
+          d++;
         }
       }
-      console.log(a, ' -- ', b, ' -- ', c, ' -- ', d)
-    }else{
-      console.log('escolha uma opção')
+      console.log(a, " -- ", b, " -- ", c, " -- ", d);
+
+      window.location.href = "/resultado";
+    } else {
+      console.log("escolha uma opção");
     }
   }
 }
