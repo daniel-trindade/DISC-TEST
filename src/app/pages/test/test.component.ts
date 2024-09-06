@@ -5,7 +5,6 @@ import { ProgressBarComponent } from "../../components/progress-bar/progress-bar
 import { HttpClientModule } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
 import { DataService } from "../../data.service";
-import { Console } from "node:console";
 
 @Component({
   selector: "app-test",
@@ -38,51 +37,53 @@ export class TestComponent {
   holdOption: string = "";
   holdResult: string[] = [];
 
-
   ngOnInit(): void {
     this.dataService.getData().subscribe((data) => {
       this.data = data;
-      console.log(data.questions.question_1.atributo1);
       this.setOptions();
     });
   }
 
   //FUNÇÃO PARA VALIDAR OPÇÃO DO USUÁRIO
   handleOption(option: any) {
-    if(option=='A'){
-      this.setFalseAll()
-      this.selection1=!this.selection1
-      this.holdOption = "A"
+    if (option == "A") {
+      this.setFalseAll();
+      this.selection1 = !this.selection1;
+      this.holdOption = "A";
     }
-    if(option=='B'){
-      this.setFalseAll()
-      this.selection2=!this.selection2
-      this.holdOption = "B"
+    if (option == "B") {
+      this.setFalseAll();
+      this.selection2 = !this.selection2;
+      this.holdOption = "B";
     }
-    if(option=='C'){
-      this.setFalseAll()
-      this.selection3=!this.selection3
-      this.holdOption = "C"
+    if (option == "C") {
+      this.setFalseAll();
+      this.selection3 = !this.selection3;
+      this.holdOption = "C";
     }
-    if(option=='D'){
-      this.setFalseAll()
-      this.selection4=!this.selection4
-      this.holdOption = "D"
+    if (option == "D") {
+      this.setFalseAll();
+      this.selection4 = !this.selection4;
+      this.holdOption = "D";
     }
   }
 
-
-  //FUNÇÃO ATRIBUIDA AO BOTÃO PROXIMO: FAZ AS CHAMADAS NECESSÁRIAS PARA ATUALIZAR A TELA A CADA PASSO
+  //FUNÇÃO ATRIBUIDA AO BOTÃO "PROXIMO": FAZ AS CHAMADAS NECESSÁRIAS PARA ATUALIZAR A TELA A CADA PASSO
   nextBlock() {
-    this.questionBlock++;
-    this.setOptions();
-    this.setProgressBar();
-    this.holdResult.push(this.holdOption)
-    console.log(this.holdResult)
-    this.setFalseAll
+    if(this.holdOption){
+      this.questionBlock++;
+      this.setOptions();
+      this.setProgressBar();
+      this.holdResult.push(this.holdOption);
+      console.log(this.holdResult);
+      this.setFalseAll();
+    }else{
+      console.log("não entrou")
+    }
+    
   }
 
-   //FUNÇÃO PARA TROCAR OS ATRIBUTOS 
+  //FUNÇÃO PARA TROCAR OS ATRIBUTOS
   setOptions() {
     this.option1 =
       this.data.questions[`question_${this.questionBlock}`]?.atributo1;
@@ -100,10 +101,15 @@ export class TestComponent {
   }
 
   //FUNÇÃO AUXILIAR PARA SETAR FALSE EM OPTIONS
-  setFalseAll(){
+  setFalseAll() {
+    this.holdOption = "";
     this.selection1 = false;
     this.selection2 = false;
     this.selection3 = false;
     this.selection4 = false;
+  }
+
+  showResult(){
+    
   }
 }

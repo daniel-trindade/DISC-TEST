@@ -45,7 +45,16 @@
       font="16pt"
       label="Proximo"
       (clicked)="nextBlock()"
+      *ngIf="questionBlock<28"
     ></app-button>
+    <app-button
+    width="130px"
+    height="60px"
+    font="16pt"
+    label="Concluir"
+    (clicked)="nextBlock()"
+    *ngIf="questionBlock==28"
+  ></app-button>
     <p>{{ questionBlock }}/28</p>
     <app-progress-bar [progress]="progressBar"></app-progress-bar>
     <p>Progresso</p>
