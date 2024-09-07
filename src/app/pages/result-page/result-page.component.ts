@@ -1,9 +1,10 @@
 import { Component } from "@angular/core";
+import { StandardBoxComponent } from "../../components/standard-box/standard-box.component";
 
 @Component({
   selector: "app-result-page",
   standalone: true,
-  imports: [],
+  imports: [StandardBoxComponent],
   templateUrl: "./result-page.component.html",
   styleUrl: "./result-page.component.scss",
 })
@@ -18,6 +19,8 @@ export class ResultPageComponent {
   inf: string = "";
   ste: string = "";
   con: string = "";
+  result: number = 0
+  attribute: string = ""
 
   ngOnInit() {
     const savedData = sessionStorage.getItem('resultData');
@@ -35,5 +38,22 @@ export class ResultPageComponent {
     this.inf = ((this.influence * 100) / 28).toFixed(2);
     this.ste = ((this.steadness * 100) / 28).toFixed(2);
     this.con = ((this.conscientiousness * 100) / 28).toFixed(2);
+  }
+
+  checkResult(){
+    this.result = this.dominance
+    this.attribute = "dominancia"
+    if(this.influence > this.result){
+      this.result = this.influence
+      this.attribute = "influencia"
+    }
+    if (this.steadness > this.result){
+      this.result = this.steadness
+      this.attribute = "Estabilidade"
+    }
+    if(this.conscientiousness > this.result){
+      this.result = this.conscientiousness
+      this.attribute = "Conformidade"
+    }
   }
 }
