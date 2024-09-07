@@ -5,6 +5,7 @@ import { ProgressBarComponent } from "../../components/progress-bar/progress-bar
 import { HttpClientModule } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
 import { DataService } from "../../data.service";
+import { Router } from "@angular/router";
 
 @Component({
   selector: "app-test",
@@ -20,7 +21,10 @@ import { DataService } from "../../data.service";
   providers: [DataService],
 })
 export class TestComponent {
-  constructor(private dataService: DataService) {}
+  constructor(
+    private dataService: DataService,
+    private router: Router
+  ) {}
 
   data: any;
   questionBlock: number = 1;
@@ -131,9 +135,17 @@ export class TestComponent {
           d++;
         }
       }
-      console.log(a, " -- ", b, " -- ", c, " -- ", d);
+      console.log(a, " -- ", b, " -- ", c, " -- ", d)
 
-      window.location.href = "/resultado";
+      this.router.navigate(['/resultado'], {
+        state: {
+          dominance: a,
+          influence: b,
+          steadness: c,
+          conscientiousness: d 
+        }
+      });
+
     } else {
       console.log("escolha uma opção");
     }

@@ -1,22 +1,39 @@
-import { Component, Input } from '@angular/core';
+import { Component } from "@angular/core";
+import { Router } from "@angular/router";
 
 @Component({
-  selector: 'app-result-page',
+  selector: "app-result-page",
   standalone: true,
   imports: [],
-  templateUrl: './result-page.component.html',
-  styleUrl: './result-page.component.scss'
+  templateUrl: "./result-page.component.html",
+  styleUrl: "./result-page.component.scss",
 })
 export class ResultPageComponent {
-  @Input() dominance: number = 4;
-  @Input() influence: number = 15;
-  @Input() steadness: number = 4;
-  @Input() conscientiousness: number = 5;
+  constructor(private router: Router) {}
 
-  //PERCENTIL VALUES
-  dom = ((this.dominance*100)/28).toFixed(2)
-  inf = ((this.influence*100)/28).toFixed(2)
-  ste = ((this.steadness*100)/28).toFixed(2)
-  con = ((this.conscientiousness*100)/28).toFixed(2)
+  dominance: number = 0;
+  influence: number = 0;
+  steadness: number = 0;
+  conscientiousness: number = 0;
+  dom: string = "";
+  inf: string = "";
+  ste: string = "";
+  con: string = "";
 
+  ngOnInit() {
+    const navigation = this.router.getCurrentNavigation();
+    if (navigation?.extras.state) {
+      console.log('entrou', navigation)
+      this.dominance = navigation.extras.state["dominance"];
+      this.influence = navigation.extras.state["influence"];
+      this.steadness = navigation.extras.state["steadness"];
+      this.conscientiousness = navigation.extras.state["conscientiousness"];
+    }
+
+    //PERCENTIL VALUES
+    this.dom = ((this.dominance * 100) / 28).toFixed(2);
+    this.inf = ((this.influence * 100) / 28).toFixed(2);
+    this.ste = ((this.steadness * 100) / 28).toFixed(2);
+    this.con = ((this.conscientiousness * 100) / 28).toFixed(2);
+  }
 }
