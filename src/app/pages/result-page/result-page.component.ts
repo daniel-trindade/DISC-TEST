@@ -20,8 +20,6 @@ export class ResultPageComponent {
   con: string = "";
 
   ngOnInit() {
-    const navigation = this.router.getCurrentNavigation();
-
     const savedData = sessionStorage.getItem('resultData');
 
     if (savedData) {
