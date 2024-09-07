@@ -1,67 +1,13 @@
 <div class="result-container">
   <h1>Seu Resultado</h1>
   <div class="values-block">
-    <app-standard-box label = "Dominância" [value]=" dom "></app-standard-box>
-    <app-standard-box label = "Influência" [value]=" inf "></app-standard-box>
-    <app-standard-box label = "Estabilidade" [value]=" ste "></app-standard-box>
-    <app-standard-box label = "Conformidade" [value]=" con "></app-standard-box>
+    <app-standard-box label="Dominância" [value]="dom"></app-standard-box>
+    <app-standard-box label="Influência" [value]="inf"></app-standard-box>
+    <app-standard-box label="Estabilidade" [value]="ste"></app-standard-box>
+    <app-standard-box label="Conformidade" [value]="con"></app-standard-box>
   </div>
-
-  <div class="text-result">
-    <h2>Dominância</h2>
-    <p>
-      O perfil de Dominância (representado pela letra "D" no teste DISC) é caracterizado por comportamentos e atitudes voltados para a ação, controle e conquista de resultados. Pessoas com um alto nível de Dominância têm uma abordagem direta e assertiva para lidar com desafios e problemas. Aqui estão as principais características desse perfil:
-    </p>
-    <h3>Características do Perfil de Dominância:</h3>
-    <ul>
-      <li>
-        <span>Foco em Resultados:</span> Essas pessoas são orientadas a objetivos e resultados. Gostam de tomar decisões rápidas e alcançar metas com eficiência.
-      </li>
-      <li>
-        <span>Assertividade:</span> Indivíduos com Dominância são geralmente assertivos e confiantes. Não têm medo de expressar suas opiniões e tomar a dianteira em situações de conflito.
-      </li>
-      <li>
-        <span>Competitividade:</span> Tendem a ser altamente competitivos, buscando constantemente superar desafios e vencer. Isso os motiva a melhorar continuamente.
-      </li>
-      <li>
-        <span>Proatividade:</span> São proativos, preferindo agir e tomar iniciativas em vez de esperar que as coisas aconteçam.
-      </li>
-      <li>
-        <span>Independência:</span> Valorizam a autonomia e preferem ter controle sobre as situações, sendo mais independentes em suas ações.
-      </li>
-      <li>
-        <span>Tolerância ao Risco:</span> Estão mais dispostos a correr riscos, especialmente quando acreditam que isso os levará a um resultado positivo.
-      </li>
-      <li>
-        <span>Diretividade:</span> A comunicação de pessoas com esse perfil é geralmente direta e objetiva, focando nos fatos e nas soluções.
-      </li>
-    </ul>
-    <h3>Pontos de Atenção:</h3>
-    <ul>
-      <li>
-        <span>Impaciência:</span> Podem ser impacientes, especialmente quando percebem que os outros estão atrasando o progresso ou não estão sendo tão eficientes quanto gostariam.
-      </li>
-      <li>
-        <span>Propensão ao Conflito:</span> Devido à sua natureza assertiva, podem, às vezes, ser vistos como agressivos ou insensíveis, o que pode levar a conflitos interpessoais.
-      </li>
-      <li>
-        <span>Falta de Consideração pelos Detalhes:</span> O foco em resultados pode fazer com que ignorem ou subestimem detalhes importantes.
-      </li>
-      <li>
-        <span>Desafios na Colaboração:</span> Preferem trabalhar de forma independente, o que pode dificultar a colaboração em equipe, especialmente em ambientes que requerem consenso.
-      </li>
-    </ul>
-    <h3>Aplicações do Perfil de Dominância:</h3>
-    <ul>
-      <li>
-        <span>Liderança:</span> Pessoas com perfil de Dominância são frequentemente encontradas em posições de liderança, onde suas habilidades para tomar decisões e orientar a equipe para resultados são altamente valorizadas.
-      </li>
-      <li>
-        <span>Ambientes de Alta Pressão:</span> Se destacam em ambientes que exigem decisões rápidas e eficientes, como vendas, negociações e gestão de crises.
-      </li>
-    </ul>
-    <p>
-      Em resumo, o perfil de Dominância é ideal para situações que requerem ação decisiva e orientação para resultados. No entanto, é importante que esses indivíduos desenvolvam habilidades de escuta e empatia para equilibrar sua abordagem e melhorar as relações interpessoais.
-    </p>
-  </div>
+  <app-conscientiousness *ngIf="attribute == 'conscientiousness'"></app-conscientiousness>
+  <app-dominance *ngIf="attribute == 'dominance'"></app-dominance>
+  <app-steadness *ngIf="attribute == 'steadness'"></app-steadness>
+  <app-influence *ngIf="attribute == 'influence'"></app-influence>
 </div>
