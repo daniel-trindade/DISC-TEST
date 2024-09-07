@@ -1,5 +1,4 @@
 import { Component } from "@angular/core";
-import { Router } from "@angular/router";
 
 @Component({
   selector: "app-result-page",
@@ -9,7 +8,7 @@ import { Router } from "@angular/router";
   styleUrl: "./result-page.component.scss",
 })
 export class ResultPageComponent {
-  constructor(private router: Router) {}
+  constructor() {}
 
   dominance: number = 0;
   influence: number = 0;
@@ -22,12 +21,15 @@ export class ResultPageComponent {
 
   ngOnInit() {
     const navigation = this.router.getCurrentNavigation();
-    if (navigation?.extras.state) {
-      console.log('entrou', navigation)
-      this.dominance = navigation.extras.state["dominance"];
-      this.influence = navigation.extras.state["influence"];
-      this.steadness = navigation.extras.state["steadness"];
-      this.conscientiousness = navigation.extras.state["conscientiousness"];
+
+    const savedData = sessionStorage.getItem('resultData');
+
+    if (savedData) {
+      const parsedData = JSON.parse(savedData);
+      this.dominance = parsedData.a;
+      this.influence = parsedData.b;
+      this.steadness = parsedData.c;
+      this.conscientiousness = parsedData.d;
     }
 
     //PERCENTIL VALUES

@@ -137,14 +137,9 @@ export class TestComponent {
       }
       console.log(a, " -- ", b, " -- ", c, " -- ", d)
 
-      this.router.navigate(['/resultado'], {
-        state: {
-          dominance: a,
-          influence: b,
-          steadness: c,
-          conscientiousness: d 
-        }
-      });
+      sessionStorage.setItem('resultData', JSON.stringify({ a, b, c, d }));
+
+      window.location.href = "/resultado";
 
     } else {
       console.log("escolha uma opção");
