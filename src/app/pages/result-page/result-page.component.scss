@@ -5,6 +5,13 @@
   align-items: center;
   background-color: #fff;
   color: #012853;
+
+  a {
+    text-decoration: none;
+    color: #012853;
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+  }
 }
 
 .values-block {
@@ -28,26 +35,6 @@
 
   h2 {
     font-size: 1rem;
-  }
-}
-
-.text-result{
-  padding: 1rem;
-
-  p {
-    text-align: justify;
-  }
-
-  ul {
-    margin: 1rem 0 1rem 1rem;
-
-    li {
-      text-align: justify;
-
-      span {
-        font-weight: 600;
-      }
-    }
   }
 }
 
