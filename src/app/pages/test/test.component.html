@@ -10,7 +10,7 @@
       height="80px"
       font="16pt"
       label="{{ option1 }}"
-      [selected]='selection1'
+      [selected]="selection1"
       (clicked)="handleOption('A')"
     ></app-button>
     <app-button
@@ -18,7 +18,7 @@
       height="80px"
       font="16pt"
       label="{{ option2 }}"
-      [selected]='selection2'
+      [selected]="selection2"
       (clicked)="handleOption('B')"
     ></app-button>
     <app-button
@@ -26,7 +26,7 @@
       height="80px"
       font="16pt"
       label="{{ option3 }}"
-      [selected]='selection3'
+      [selected]="selection3"
       (clicked)="handleOption('C')"
     ></app-button>
     <app-button
@@ -34,7 +34,7 @@
       height="80px"
       font="16pt"
       label="{{ option4 }}"
-      [selected]='selection4'
+      [selected]="selection4"
       (clicked)="handleOption('D')"
     ></app-button>
   </div>
@@ -45,19 +45,19 @@
       font="16pt"
       label="Proximo"
       (clicked)="nextBlock()"
-      *ngIf="questionBlock<28"
+      *ngIf="questionBlock < 28"
     ></app-button>
     <app-button
-    width="130px"
-    height="60px"
-    font="16pt"
-    label="Concluir"
-    (clicked)="showResult()"
-    *ngIf="questionBlock==28"
-  ></app-button>
+      width="130px"
+      height="60px"
+      font="16pt"
+      label="Concluir"
+      (clicked)="showResult()"
+      *ngIf="questionBlock == 28"
+    ></app-button>
     <p>{{ questionBlock }}/28</p>
     <app-progress-bar [progress]="progressBar"></app-progress-bar>
     <p>Progresso</p>
-    <a href="/" *ngIf="questionBlock<28">Sair</a>
+    <a href="/" *ngIf="questionBlock < 28">Sair</a>
   </div>
 </div>

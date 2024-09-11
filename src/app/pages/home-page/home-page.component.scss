@@ -1,6 +1,6 @@
 .homeContainer {
   width: 100%;
-  height: 82vh;
+  min-height: 82vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -20,7 +20,7 @@
   }
 }
 
-.body{
+.body {
   margin-top: 3rem;
   padding: 1rem;
 
@@ -35,8 +35,7 @@
   }
 }
 
-@media  (min-width: 900px) {
-
+@media (min-width: 900px) {
   .homeContainer {
     width: 900px;
   }
