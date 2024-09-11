@@ -24,7 +24,7 @@
   height: 300px;
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  place-items: center; 
+  place-items: center;
 }
 
 .progress {
@@ -45,5 +45,29 @@
 
   p:first-of-type {
     margin-top: 2rem;
+  }
+}
+
+@media (min-width: 900px) {
+  .test-container {
+    width: 900px;
+  }
+
+  .options {
+    width: 900px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    place-items: center;
+  }
+
+  h1 {
+    margin: 0;
+  }
+}
+
+@media (max-height: 820px) {
+  .options {
+    height: 150px;
   }
 }

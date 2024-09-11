@@ -38,4 +38,21 @@
   }
 }
 
-// #F7F39C
+@media (min-width: 900px) {
+  .result-container {
+    width: 900px;
+
+    h1 {
+      margin: 2rem 0 2rem 0;
+    }
+  }
+
+  .values-block {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    place-items: center;
+    margin: 2rem 0 2rem 0;
+  }
+
+}
