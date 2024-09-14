@@ -1,0 +1,29 @@
+.message-container{
+  width: 80vw;
+  min-height: 4vh;
+  margin: 3rem 0 -1rem 0;
+  color: #012853;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+
+  p {
+    text-align: center;
+    padding: .5rem;
+  }
+}
+
+.error {
+ background-color: #f18888;
+}
+
+.success {
+  background-color: #88f18d;
+}
+
+@media (min-width: 900px) {
+  .message-container {
+    width: 50vw;
+  }
+}

@@ -6,6 +6,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { CommonModule } from "@angular/common";
 import { DataService } from "../../data.service";
 import { Router } from "@angular/router";
+import { FlashMessageComponent } from "../../components/flash-message/flash-message.component";
 
 @Component({
   selector: "app-test",
@@ -15,16 +16,14 @@ import { Router } from "@angular/router";
     ProgressBarComponent,
     HttpClientModule,
     CommonModule,
+    FlashMessageComponent,
   ],
   templateUrl: "./test.component.html",
   styleUrl: "./test.component.scss",
   providers: [DataService],
 })
 export class TestComponent {
-  constructor(
-    private dataService: DataService,
-    private router: Router
-  ) {}
+  constructor(private dataService: DataService, private router: Router) {}
 
   data: any;
   questionBlock: number = 1;
@@ -40,6 +39,8 @@ export class TestComponent {
   progressBar: number = 0;
   holdOption: string = "";
   holdResult: string[] = [];
+  message: string = "";
+  showMsg: boolean = false;
 
   ngOnInit(): void {
     this.dataService.getData().subscribe((data) => {
@@ -82,7 +83,10 @@ export class TestComponent {
       console.log(this.holdResult);
       this.setFalseAll();
     } else {
-      console.log("não entrou");
+      this.showMessage(
+        "Você precisa selecionar uma opção para continuar",
+        "error"
+      );
     }
   }
 
@@ -135,14 +139,25 @@ export class TestComponent {
           d++;
         }
       }
-      console.log(a, " -- ", b, " -- ", c, " -- ", d)
+      console.log(a, " -- ", b, " -- ", c, " -- ", d);
 
-      sessionStorage.setItem('resultData', JSON.stringify({ a, b, c, d }));
+      sessionStorage.setItem("resultData", JSON.stringify({ a, b, c, d }));
 
       window.location.href = "/resultado";
-
     } else {
-      console.log("escolha uma opção");
+      this.showMessage(
+        "Você precisa selecionar uma opção para continuar",
+        "error"
+      );
     }
+  }
+
+  showMessage(msg: string, type: string) {
+    this.message = msg;
+    this.showMsg = true;
+    setTimeout(() => {
+      this.showMsg = false;
+      this.message = "";
+    }, 3000);
   }
 }
