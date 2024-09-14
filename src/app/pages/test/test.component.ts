@@ -84,8 +84,7 @@ export class TestComponent {
       this.setFalseAll();
     } else {
       this.showMessage(
-        "Você precisa selecionar uma opção para continuar",
-        "error"
+        "Você precisa selecionar uma opção para continuar"
       );
     }
   }
@@ -147,12 +146,11 @@ export class TestComponent {
     } else {
       this.showMessage(
         "Você precisa selecionar uma opção para continuar",
-        "error"
       );
     }
   }
 
-  showMessage(msg: string, type: string) {
+  showMessage(msg: string) {
     this.message = msg;
     this.showMsg = true;
     setTimeout(() => {
