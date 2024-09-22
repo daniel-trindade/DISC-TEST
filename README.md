@@ -26,6 +26,10 @@ Aplicação criada usando Angular com TypeScript, HTML e SCSS
 
 ### Tela Ide Resultado
 
-![Resultado](https://i.imgur.com/6YMkxAv.png)
+![Resultado](https://i.imgur.com/6YMkxAv.png) ![Resultado](https://i.imgur.com/3EaI3Gc.png)
+
+### Versão Mobile
+
+![Mobile1](https://i.imgur.com/6tSW9Ny.png)
 
 
