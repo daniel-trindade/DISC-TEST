@@ -4,7 +4,7 @@
 
 ## Imagens da Aplicação
 
-class="imgur-embed-pub" lang="en" data-id="a/Xer9EqN"  ><a href="//imgur.com/a/Xer9EqN">App &quot;Teste DISC&quot; by Daniel Trindade</a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script>]
+![Img](https://imgur.com/dO136RA)
 
 ## Sobre a Aplicação
 
