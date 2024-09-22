@@ -2,7 +2,7 @@
 
 ## Endereço do Site: 
 
-< disc-test.vercel.app >
+<disc-test.vercel.app>
 
 ## Sobre a Aplicação
 
