@@ -4,7 +4,7 @@
 
 ## Imagens da Aplicação
 
-![Img]([https://imgur.com/dO136RA](https://i.imgur.com/dO136RA.png))
+![Img]([https://imgur.com/dO136RA](https://i.imgur.com/dO136RA.png)
 
 ## Sobre a Aplicação
 
