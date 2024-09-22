@@ -24,7 +24,7 @@ Aplicação criada usando Angular com TypeScript, HTML e SCSS
 ### Tela de Teste
 ![Teste](https://i.imgur.com/P7t0pWM.png)
 
-### Tela Ide Resultadohttps://i.imgur.com/q3uVC4D.png
+### Tela de Resultado
 
 ![Resultado](https://i.imgur.com/6YMkxAv.png)
 
