@@ -26,11 +26,11 @@ Aplicação criada usando Angular com TypeScript, HTML e SCSS
 
 ### Tela Ide Resultado
 
-![Resultado](https://i.imgur.com/6YMkxAv.png) ![Resultado](https://i.imgur.com/3EaI3Gc.png)
+![Resultado](https://i.imgur.com/6YMkxAv.png)
 
 ### Versão Mobile
 
-<img src="https://i.imgur.com/6tSW9Ny.png" alt="descrição" width="300">
+<img src="https://i.imgur.com/6tSW9Ny.png" alt="Tela Inicial" width="300"> <img src="https://i.imgur.com/6tSW9Ny.png" alt="Tela Inicial" width="300">
 
 
 
