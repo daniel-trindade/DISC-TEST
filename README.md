@@ -30,7 +30,7 @@ Aplicação criada usando Angular com TypeScript, HTML e SCSS
 
 ### Versão Mobile
 
-<img src="https://i.imgur.com/6tSW9Ny.png" alt="Tela Inicial" width="300"> <img src="https://i.imgur.com/q3uVC4D.png" alt="Tela Explicativa" width="300"> <img src="https://i.imgur.com/P7t0pWM.png" alt="Tela Explicativa" width="300"> <img src="https://i.imgur.com/6YMkxAv.png" alt="Tela Explicativa" width="300">
+<img src="https://i.imgur.com/6tSW9Ny.png" alt="Tela Inicial" width="300"> <img src="https://i.imgur.com/3EaI3Gc.png" alt="Tela Explicativa" width="300"> <img src="https://i.imgur.com/yRWBPbU.png" alt="Tela Explicativa" width="300"> <img src="https://i.imgur.com/DXUokc0.png" alt="Tela Explicativa" width="300">
 
 
 
