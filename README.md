@@ -4,7 +4,7 @@
 
 ## Imagens da Aplicação
 
-![Img](https://imgur.com/dO136RA)
+![Img](https://t4.ftcdn.net/jpg/04/23/14/25/360_F_423142507_FsZUpYT6eamfNgyPxRlezjyx8eV1tlXz.jpg)
 
 ## Sobre a Aplicação
 
