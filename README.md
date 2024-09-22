@@ -24,13 +24,13 @@ Aplicação criada usando Angular com TypeScript, HTML e SCSS
 ### Tela de Teste
 ![Teste](https://i.imgur.com/P7t0pWM.png)
 
-### Tela Ide Resultado
+### Tela Ide Resultadohttps://i.imgur.com/q3uVC4D.png
 
 ![Resultado](https://i.imgur.com/6YMkxAv.png)
 
 ### Versão Mobile
 
-<img src="https://i.imgur.com/6tSW9Ny.png" alt="Tela Inicial" width="300"> <img src="https://i.imgur.com/6tSW9Ny.png" alt="Tela Inicial" width="300">
+<img src="https://i.imgur.com/6tSW9Ny.png" alt="Tela Inicial" width="300"> <img src="https://i.imgur.com/q3uVC4D.png" alt="Tela Explicativa" width="300"> <img src="https://i.imgur.com/P7t0pWM.png" alt="Tela Explicativa" width="300"> <img src="https://i.imgur.com/6YMkxAv.png" alt="Tela Explicativa" width="300">
 
 
 
