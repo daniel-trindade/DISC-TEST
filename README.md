@@ -4,7 +4,10 @@
 
 ## Imagens da Aplicação
 
-![Img](https://i.imgur.com/dO136RA.png)
+![Início](https://i.imgur.com/dO136RA.png)
+![Tela Explicativa](https://i.imgur.com/q3uVC4D.png)
+![Teste](https://i.imgur.com/P7t0pWM.png)
+![Resultado](https://i.imgur.com/6YMkxAv.png)
 
 ## Sobre a Aplicação
 
