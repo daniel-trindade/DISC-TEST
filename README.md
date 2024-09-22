@@ -30,6 +30,7 @@ Aplicação criada usando Angular com TypeScript, HTML e SCSS
 
 ### Versão Mobile
 
-![Mobile1](https://i.imgur.com/6tSW9Ny.png)
+<img src="https://i.imgur.com/6tSW9Ny.png" alt="descrição" width="300">
+
 
 
