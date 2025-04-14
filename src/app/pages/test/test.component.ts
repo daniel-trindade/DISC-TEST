@@ -80,7 +80,6 @@ export class TestComponent {
       this.setOptions();
       this.setProgressBar();
       this.holdResult.push(this.holdOption);
-      console.log(this.holdResult);
       this.setFalseAll();
     } else {
       this.showMessage(

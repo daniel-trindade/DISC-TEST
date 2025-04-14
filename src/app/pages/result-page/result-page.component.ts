@@ -68,6 +68,5 @@ export class ResultPageComponent {
       this.result = this.conscientiousness;
       this.attribute = "conscientiousness";
     }
-    console.log("calculo realizado", this.attribute, this.result);
   }
 }

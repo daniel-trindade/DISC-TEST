@@ -12,11 +12,8 @@ import { TestComponent } from "./pages/test/test.component";
   standalone: true,
   imports: [
     RouterOutlet,
-    HomePageComponent,
     NavBarComponent,
     FooterComponent,
-    StartingTestComponent,
-    TestComponent,
   ],
   templateUrl: "./app.component.html",
   styleUrl: "./app.component.scss",
